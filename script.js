@@ -1,6 +1,8 @@
 function firstWord(s) {
   // your code here
-	return s => (s = s.trim(), s.includes(" ") ? s.split(" ")[0] : s);
+	let newStr = str.trim();
+    let index = newStr.indexOf(" ");
+    return index === -1 ? newStr: newStr.substring(0, index);
 }
 
 // Do not change the code below
